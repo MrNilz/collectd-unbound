@@ -3,8 +3,8 @@
 HOSTNAME="${COLLECTD_HOSTNAME:-localhost}"
 INTERVAL="${COLLECTD_INTERVAL:-60}"
 
-# Collectd Issues 60.000 as the interval so we cut it down to two decimals
-INTERVAL="${INTERVAL:0:2}"
+# Collectd Issues XY.000 as the interval so we cut everything after the dot
+INTERVAL="${INTERVAL%.*}"
 
 
 # ASH does not support Arrays so we have to trick around a bit here
