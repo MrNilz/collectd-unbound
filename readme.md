@@ -12,7 +12,7 @@ None
 
 ## Prequisites
 
-Designed to work on a openwrt device we need the packaged busy-box, collectd, collectd-mod-exec, unbound, unbound-control installed for this script to work meaningfully.
+Designed to work on a openwrt device we need the packages `busybox, collectd, collectd-mod-exec, unbound, unbound-control, luci-app-statistics` installed for this script to work meaningfully.
 Luci-statistics assumes you use RRD as a backend for collectd.
 
 ## Install on Openwrt 
