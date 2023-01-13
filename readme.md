@@ -17,15 +17,16 @@ Luci-statistics assumes you use RRD as a backend for collectd.
 
 `opkg update && opkg install busybox collectd collectd-mod-exec unbound unbound-control luci-app-statistics`
 
-## Install on Openwrt 
+## Install collectd-unbound
 
-Copy the files to the desired destinations on your openwrt.
+1. Copy the files to the desired destinations on your openwrt.
 
-`scp opt/user/bin/collectd-unbound.sh root@<your-server-ip>:/opt/user/bin/collectd-unbound.sh`
+    `scp opt/user/bin/collectd-unbound.sh root@<your-server-ip>:/opt/user/bin/collectd-unbound.sh`
 
-`scp www/luci-static/resources/statistics/rrdtool/definitions/unbound.js root@<your-server-ip>:/www/luci-static/resources/statistics/rrdtool/definitions/unbound.js`
+    `scp www/luci-static/resources/statistics/rrdtool/definitions/unbound.js root@<your-server-ip>:/www/luci-static/resources/statistics/rrdtool/definitions/unbound.js`
 
-Do not forget to make collectd-unbound.sh executable.
-`chmod +x /opt/user/bin/collectd-unbound.sh`
+2. Do not forget to make collectd-unbound.sh executable.
 
-In order to start collecting you need to create a collectd-exec task and execute `/opt/user/bin/collectd-unbound.sh` as user unbound.
+    `chmod +x /opt/user/bin/collectd-unbound.sh`
+
+3. In order to start collecting you need to create a collectd-exec task and execute `/opt/user/bin/collectd-unbound.sh` as user unbound.
