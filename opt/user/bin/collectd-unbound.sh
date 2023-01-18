@@ -45,5 +45,9 @@ while sleep "${INTERVAL}"; do
           
           echo "PUTVAL \"$HOSTNAME/unbound/$datatype-${STAT_LINE%=*}\" interval=${INTERVAL} $TIME:${STAT_LINE##*=}"
         fi
+        
+        if [[ $LINE_NUMBER -gt 33 ]] ; then
+          break
+        fi
     done
 done
