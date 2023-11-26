@@ -3,7 +3,7 @@
 Simple shell script to collect stats from unbound-control and forward them to collectd.
 Intended to use on an openwrt device on any other small device that can not deal with the overhead of go or python to collect the statistics. To avoid complexity and reduce computation time the script relies a lot on hard-coded conventions.
 
-For Visualisation of the collected data luci-statistics is used. 
+For Visualisation of the collected data luci-statistics together with the Output plugin RRDTool is used.
 
 # Config
 None
