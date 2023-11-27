@@ -15,7 +15,7 @@ None
 Designed to work on a openwrt device you need the packages busybox, collectd, collectd-mod-exec, unbound, unbound-control, luci-app-statistics installed for this script to work meaningfully.
 Luci-statistics assumes you use RRD as a backend for collectd.
 
-`opkg update && opkg install busybox collectd collectd-mod-exec unbound unbound-control luci-app-statistics`
+`opkg update && opkg install busybox collectd collectd-mod-exec unbound unbound-control luci-app-statistics bash`
 
 ## Install collectd-unbound
 
